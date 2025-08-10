@@ -86,6 +86,11 @@ html, body {
     padding: 0 34px;
   }
 }
+@media (max-width: 440px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 
 .socials {
   display: flex;
@@ -113,11 +118,25 @@ html, body {
 
 h1 {
   font-family: "Red Hat Display", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: 2.4px;
   margin-bottom: 70px;
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.06rem;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+  }
+}
+@media (max-width: 440px) {
+  h1 {
+    font-size: 1.875rem;
+    line-height: 1.67;
+    letter-spacing: 1.5px;
+  }
 }
 
 .header {
@@ -145,10 +164,11 @@ h1 {
 .section .image {
   display: inline-block;
   margin-bottom: 20px;
+  width: 100%;
 }
 .section .image img {
   object-fit: contain;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .section .desc {
